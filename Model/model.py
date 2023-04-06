@@ -41,7 +41,6 @@ def predict_attack_technique(text, clf, vectorizer):
     return y_pred[0]
 
 
-# Sample usage
 attack_techniques = get_attack_techniques()
 technique_names = [t.name.lower() for t in attack_techniques]
 X_train = preprocess(technique_names)
